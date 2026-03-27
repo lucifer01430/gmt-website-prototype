@@ -1,0 +1,323 @@
+        /* ====== GUMT Hero (scoped) ====== */
+        #gumt-hero {
+            --gumt-neon: #8dfc4b;
+            --gumt-neon-2: #65e73a;
+            --gumt-glass: rgba(255, 255, 255, .08);
+            --gumt-border: rgba(255, 255, 255, .18);
+            --gumt-header-h: 120px;
+            /* adjust to match your header height */
+            position: relative;
+            min-height: calc(100vh - var(--gumt-header-h));
+            overflow: hidden;
+            isolation: isolate;
+        }
+
+        /* Background (JS updates) */
+        #gumt-hero .gumt-bg {
+            position: absolute;
+            inset: 0;
+            z-index: -2;
+            background:
+                radial-gradient(80% 60% at 50% 40%, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, .35) 70%, rgba(0, 0, 0, .72) 100%),
+                linear-gradient(to bottom, rgba(0, 0, 0, .18), rgba(0, 0, 0, .58)),
+                url('images/custom/main_slider.jpg') center/cover no-repeat;
+            filter: blur(3px) brightness(0.97) saturate(1.05);
+            opacity: 0.98;
+        }
+
+        #gumt-hero .gumt-bg::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 1;
+            background: linear-gradient(120deg, rgba(255, 255, 255, .08) 0%, rgba(0, 0, 0, .06) 100%);
+            opacity: .18;
+        }
+
+
+        /* Subtle grain */
+        #gumt-hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: -1;
+            background-image: radial-gradient(rgba(255, 255, 255, .03) 1px, transparent 1px);
+            background-size: 3px 3px;
+            opacity: .6;
+        }
+
+
+        /* Arrows */
+        #gumt-hero .gumt-circle {
+            position: absolute;
+            top: 50%;
+            translate: 0 -50%;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 2;
+            border: 1px solid rgba(255, 255, 255, .22);
+            display: grid;
+            place-items: center;
+            color: #fff;
+            background: rgba(0, 0, 0, .25);
+            box-shadow: 0 0 0 6px rgba(141, 252, 75, .18), 0 10px 22px rgba(0, 0, 0, .35);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+        }
+
+        #gumt-hero .gumt-circle.right {
+            right: 26px;
+        }
+
+        #gumt-hero .gumt-circle.left {
+            left: 26px
+        }
+
+        /* Center content */
+        #gumt-hero .gumt-center {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: min(1100px, 90vw);
+            margin: 0 auto;
+            padding-top: 14vh
+        }
+
+        #gumt-hero .gumt-title .line1,
+        #gumt-hero .gumt-title .line2 {
+            display: block;
+            font-weight: 900;
+            line-height: .9;
+            letter-spacing: .02em;
+            color: #fff;
+            text-shadow: 0 10px 30px rgba(0, 0, 0, .35)
+        }
+
+        #gumt-hero .gumt-title .line1 {
+            font-size: clamp(56px, 12vw, 152px)
+        }
+
+        #gumt-hero .gumt-title .line2 {
+            font-size: clamp(36px, 7vw, 90px);
+            color: var(--gumt-neon);
+            filter: drop-shadow(0 10px 24px rgba(141, 252, 75, .35))
+        }
+
+        #gumt-hero .gumt-tag {
+            max-width: 760px;
+            margin: 18px auto 26px;
+            color: #e5f6e9;
+            opacity: .95;
+            font-size: clamp(14px, 2.2vw, 18px)
+        }
+
+        /* CTAs */
+        #gumt-hero .gumt-cta {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap
+        }
+
+        #gumt-hero .gumt-btn {
+            border: 0;
+            padding: 14px 26px;
+            border-radius: 999px;
+            display: inline-block;
+            font-weight: 800;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            text-decoration: none
+        }
+
+        #gumt-hero .gumt-btn.neon {
+            background: linear-gradient(180deg, var(--gumt-neon), var(--gumt-neon-2));
+            color: #042306;
+            box-shadow: 0 0 0 2px rgba(255, 255, 255, .08), 0 16px 44px rgba(141, 252, 75, .38);
+            transition: filter .25s ease, transform .25s ease
+        }
+
+        #gumt-hero .gumt-btn.neon:hover {
+            filter: brightness(1.06);
+            transform: translateY(-1px)
+        }
+
+        #gumt-hero .gumt-btn.outline {
+            color: #fff;
+            border: 2px solid var(--gumt-neon);
+            background: linear-gradient(to bottom, rgba(255, 255, 255, .10), rgba(255, 255, 255, .02));
+            box-shadow: 0 8px 24px rgba(0, 0, 0, .25);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px)
+        }
+
+        #gumt-hero .gumt-btn.outline:hover {
+            background: var(--gumt-neon);
+            color: #042306
+        }
+
+        /* Bottom-right card */
+        #gumt-hero .gumt-card {
+            position: absolute;
+            right: 36px;
+            bottom: 36px;
+            display: block;
+            overflow: hidden;
+            border-radius: 18px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, .12), rgba(255, 255, 255, .04));
+            border: 1px solid var(--gumt-border);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, .45);
+            width: min(380px, 42vw);
+            aspect-ratio: 16/9;
+            z-index: 2;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px)
+        }
+
+        #gumt-hero .gumt-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            opacity: .95
+        }
+
+        #gumt-hero .gumt-card .play {
+            position: absolute;
+            inset: auto auto 14px 14px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: var(--gumt-neon);
+            color: #0b2a0f;
+            font-weight: 900;
+            box-shadow: 0 10px 30px rgba(141, 252, 75, .45)
+        }
+
+        #gumt-hero .gumt-card-glass {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background: linear-gradient(120deg, rgba(255, 255, 255, .18), transparent 35% 65%, rgba(255, 255, 255, .10));
+            mix-blend-mode: screen
+        }
+
+        /* Slides container (hidden data only) */
+        #gumt-hero .gumt-slides {
+            display: none
+        }
+
+        /* Responsive */
+        @media (max-width:900px) {
+            #gumt-hero .gumt-card {
+                right: 10px;
+                bottom: 10px;
+                width: min(260px, 70vw)
+            }
+
+            #gumt-hero .gumt-glass-pill {
+                left: auto;
+                right: 10px;
+                transform: none
+            }
+
+            #gumt-hero .gumt-center {
+                padding-top: 8vh;
+                border-radius: 18px;
+            }
+        }
+@media (max-width: 720px) {
+  #gumt-hero {
+    min-height: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding-top: 8vh;
+  }
+
+  #gumt-hero .gumt-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 120px;   /* bottom space reserved for smaller card */
+    max-width: 92vw;
+  }
+
+  #gumt-hero .gumt-title .line1 {
+    font-size: clamp(32px, 10vw, 46px);
+  }
+  #gumt-hero .gumt-title .line2 {
+    font-size: clamp(22px, 8vw, 34px);
+  }
+  #gumt-hero .gumt-tag {
+    margin: 10px auto 18px;
+    font-size: 14.5px;
+    line-height: 1.45;
+  }
+
+  /* CTAs stacked neatly */
+  #gumt-hero .gumt-cta {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  #gumt-hero .gumt-btn {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+    padding: 13px 20px;
+    font-size: 13.5px;
+  }
+
+  /* ✅ Card smaller & bottom-center */
+  #gumt-hero .gumt-card {
+    position: absolute;
+    left: 70%;
+    bottom: 12px;
+    width: 25vw;              /* narrower percentage */
+    max-width: 200px;         /* force smaller size */
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    margin: 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,.45);
+    z-index: 3;
+  }
+  #gumt-hero .gumt-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  #gumt-hero .gumt-card .play {
+    width: 34px;
+    height: 34px;
+  }
+
+  /* Arrows */
+  #gumt-hero .gumt-circle {
+    display: grid;
+    width: 34px;
+    height: 34px;
+    top: 48%;
+    translate: 0 -50%;
+    z-index: 4;
+  }
+  #gumt-hero .gumt-circle.left { left: 8px; }
+  #gumt-hero .gumt-circle.right { right: 8px; }
+}
+
+
+      

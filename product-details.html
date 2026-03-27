@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Product Details | Growup My Tree</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="icon" type="image/png" href="images/icon.png">
+
+  <!-- Fonts (as you had) -->
+  <link href="../css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" type="text/css">
+  <link href="../css-1?family=Merriweather:300,400,700,900" rel="stylesheet" type="text/css">
+  <link href="../css-2?family=Droid+Serif:400,400italic" rel="stylesheet" type="text/css">
+
+  <!-- Your existing CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/prettyPhoto.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+  <link href="../aos%402.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/icon.png">
+
+  <!-- Owl Carousel (CDN) – BOTH files required -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <style>
+    /* Fallback: init fail ho to bhi images visible */
+    .owl-carousel:not(.owl-loaded){ display:block; }
+    /* Image sizing */
+    #product-images-carousel .item img{
+      width:100%; max-height:320px; object-fit:cover; border-radius:12px;
+      box-shadow:0 2px 12px rgba(34,139,34,.07);
+    }
+    @media (max-width:767px){
+      #product-images-carousel .item img{ max-height:180px; }
+    }
+  </style>
+</head> 
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <!-- Preloader -->
+        <!-- <div class="preloader"></div> -->
+        <!--Start Header-->
+        <header>
+            <div class="header_bottom home1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-3 col-xl-3">
+                            <div class="logo">
+                                <a href="index.html"><img src="images/logo.png" alt="img"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-7 col-md-7 col-lg-7 text-end">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#about">About Us</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">How It Works</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#how-it-works">Step by Step</a></li>
+                                            <li><a href="#impact">Impact</a></li>
+                                            <li><a href="#faqs">FAQs</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#catalog">Plant a Tree</a></li>
+                                    <li><a href="#gift">Gift a Tree</a></li>
+                                    <li><a href="contact.html">Contat Us</a></li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                        <div class="col-sm-12 col-md-2 col-xl-2 responsive_center ms-auto">
+                            <div class="cart_info">
+                                <a href="cart.html"><img src="images/cart.png" alt="img"> <span>0</span></a>
+                            </div>
+                            <form action="#">
+                                <input type="text" placeholder="search">
+                                <input type="submit" value="">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--End Header-->
+        <!--Responsive Nav-->
+        <div class="responsive_button">
+            <p>Home</p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""><i class="fa fa-bars"></i></span>
+            </button>
+        </div>
+        <div class="responsive_nav collapse navbar-collapse" id="navbarToggleExternalContent">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#catalog">Plant a Tree</a></li>
+                <li><a href="#gift">Gift a Tree</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#account">My Account</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <!--Responsive Nav-->
+    <!--Start Page Title-->
+    <div class="page_title bg3" data-aos="fade-up" data-aos-duration="1000">
+        <div class="layer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <h1>Product Details</h1>
+                        <div class="beadcrumb">
+                            <a href="#">Home</a> <i class="fa fa-angle-right"></i> <span>Product Details</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Page Title-->
+  <!-- ===== Product Section ===== -->
+  <section class="layout_padding_2 seaction_margin" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <div class="row">
+        <!-- Left: Images -->
+        <div class="col-md-5 res_mrg">
+          <div class="full">
+            <div id="product-images-carousel" class="owl-carousel owl-theme">
+              <div class="item"><img src="images/custom/tool1.png" alt="White Sandalwood"></div>
+              <div class="item"><img src="images/custom/tool2.png" alt="White Sandalwood Closeup"></div>
+              <div class="item"><img src="images/custom/tool3.png" alt="White Sandalwood Plantation"></div>
+              <div class="item"><img src="images/custom/tool4.png" alt="Miyazaki Mango"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Details -->
+        <div class="col-md-7 product_detail_side detail_style1">
+          <div class="product-heading">
+            <h2>White Sandalwood Tree</h2>
+          </div>
+          <div class="product-detail-side">
+            <span class="new-price" style="font-size:1.5rem;color:#228B22;font-weight:700;">₹25,000</span>
+            <span class="rating" style="margin-left:16px;">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+            </span>
+            <span class="review">(12 customer reviews)</span>
+          </div>
+          <div class="category">
+            <h5>Type: <a href="#">Timber Tree</a></h5>
+          </div>
+          <div class="detail-contant">
+            <form class="cart" method="post" action="cart.html">
+              <div class="quantity">
+                <input step="1" min="1" max="10" name="quantity" value="1" title="Qty"
+                       class="input-text qty text" size="4" type="number">
+              </div>
+              <button type="submit" class="theme-btn btn-style-one">Add to cart</button>
+            </form>
+          </div>
+          <div class="clearfix"></div>
+          <div class="share_item">
+            <h5>Share Item</h5>
+            <div class="social_icons">
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="mailto:info@growmytree.com"><i class="fa fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="col-md-12">
+          <div class="full">
+            <div class="tab_bar_section">
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-bs-toggle="tab" href="#description">Description</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#reviews">Reviews (3)</a>
+                </li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="description" class="tab-pane active">
+                  <div class="product_desc">
+                    <p><strong>White Sandalwood Tree</strong> is a premium timber tree, ideal for gifting and
+                      investment. Your purchase includes plantation, 15 years of care, geo-tag, and a digital
+                      certificate. Assured buyback or annual fruits available. Support climate action and farmer
+                      livelihoods with every tree!</p>
+                  </div>
+                </div>
+
+                <div id="reviews" class="tab-pane fade">
+                  <div class="product_review">
+                    <h3>Reviews (3)</h3>
+
+                    <div class="commant-text row">
+                      <div class="col-lg-2 col-md-2 col-sm-4">
+                        <div class="profile">
+                          <img class="img-responsive" src="images/customer-1.png" alt="#">
+                        </div>
+                      </div>
+                      <div class="col-lg-10 col-md-10 col-sm-8">
+                        <h5>Aakash Mehta</h5>
+                        <p><span class="c_date">Aug 2025</span> | <span><a rel="nofollow" class="comment-reply-link" href="#">Reply</a></span></p>
+                        <span class="rating">
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </span>
+                        <p class="msg">Planting a sandalwood tree was easy and the geo-tag feature is awesome!</p>
+                      </div>
+                    </div>
+
+                    <div class="commant-text row">
+                      <div class="col-lg-2 col-md-2 col-sm-4">
+                        <div class="profile">
+                          <img class="img-responsive" src="images/customer-2.png" alt="#">
+                        </div>
+                      </div>
+                      <div class="col-lg-10 col-md-10 col-sm-8">
+                        <h5>Riya Sharma</h5>
+                        <p><span class="c_date">Aug 2025</span> | <span><a rel="nofollow" class="comment-reply-link" href="#">Reply</a></span></p>
+                        <span class="rating">
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                        </span>
+                        <p class="msg">Gifted this tree to my father, he loved the certificate and updates!</p>
+                      </div>
+                    </div>
+
+                    <div class="commant-text row">
+                      <div class="col-lg-2 col-md-2 col-sm-4">
+                        <div class="profile">
+                          <img class="img-responsive" src="images/customer-3.png" alt="#">
+                        </div>
+                      </div>
+                      <div class="col-lg-10 col-md-10 col-sm-8">
+                        <h5>Suresh Kumar</h5>
+                        <p><span class="c_date">Aug 2025</span> | <span><a rel="nofollow" class="comment-reply-link" href="#">Reply</a></span></p>
+                        <span class="rating">
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </span>
+                        <p class="msg">Great initiative, happy to support farmers and the environment.</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div><!-- /tab-pane -->
+              </div><!-- /tab-content -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== /Product Section ===== -->
+
+  <!-- Related Items -->
+  <div class="tools_wrap tools_wrap_two seaction_margin" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <div class="heading_wrap animated slide">
+        <div class="icon_bar"></div>
+        <h2 class="heading_a">Related <span>Tree Products</span></h2>
+        <h5 class="heading_small">Explore more trees to plant or gift. All prices include plantation, maintenance, and certificate.</h5>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-3 animated slide">
+          <div class="tool">
+            <figure><a href="#"><img src="images/custom/tool1.png" alt="White Sandalwood"></a></figure>
+            <div class="detail">
+              <h5><a href="#">White Sandalwood Tree</a></h5>
+              <span class="prc">₹25,000</span>
+              <a href="cart.html"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3 animated slide">
+          <div class="tool">
+            <figure><a href="#"><img src="images/custom/tool2.png" alt="Apple Tree"></a></figure>
+            <div class="detail">
+              <h5><a href="#">Apple Tree</a></h5>
+              <span class="prc">₹25,000</span>
+              <a href="cart.html"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3 animated slide">
+          <div class="tool">
+            <figure><a href="#"><img src="images/custom/tool3.png" alt="Timber Tree"></a></figure>
+            <div class="detail">
+              <h5><a href="#">Timber Tree</a></h5>
+              <span class="prc">₹25,000</span>
+              <a href="cart.html"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3 animated slide">
+          <div class="tool">
+            <figure><a href="#"><img src="images/custom/tool4.png" alt="Miyazaki Mango"></a></figure>
+            <div class="detail">
+              <h5><a href="#">Miyazaki Mango Tree</a></h5>
+              <span class="prc">₹25,000</span>
+              <a href="cart.html"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <div class="footer_bottom">
+    <div class="footer_inner">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-12 col-md-6 col-lg-4 animated slide res_mrg">
+            <div class="footer_widget">
+              <a href="#"><img src="images/white_logo.png" alt="Grow My Tree Logo"></a>
+              <p>
+                Grow Up My Tree empowers you to plant Sandalwood, Red Sandalwood, and premium Mango trees.
+                Together, we fight climate change, conserve biodiversity, and support farmer livelihoods.
+              </p>
+              <hr>
+              <a href="https://maps.app.goo.gl/ZkS3AA4bs4U7U5es7"><i class="fa fa-map-marker"></i> Khasra
+                No. 67, IIM Rd, Madiyanva, Lucknow, <br>Uttar Pradesh - 226021</a>
+              <p><i class="fa fa-phone"></i> +91 123456 789 | +91 9876 54321</p>
+              <p><i class="fa fa-envelope"></i> info@growmytree.com</p>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-2 animated slide res_mrg">
+            <div class="footer_widget">
+              <h5>Quick Links</h5>
+              <ul>
+                <li><a href="#">Home Page</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#catalog">Plant a Tree</a></li>
+                <li><a href="#gift">Gift a Tree</a></li>
+                <li><a href="#impact">Our Impact</a></li>
+                <li><a href="#contact">Get in Touch</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3 animated slide">
+            <div class="footer_widget">
+              <h5>Working Hours</h5>
+              <address>
+                <p><span>We are available 6 days a week.</span></p>
+                <p>Monday – Friday : 9 am – 6 pm</p>
+                <p>Saturday : 10 am – 4 pm</p>
+                <p>Sunday : Closed</p>
+              </address>
+              <address>
+                <p>Closed on public & bank holidays.</p>
+              </address>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3 animated slide">
+            <div class="footer_widget">
+              <h5>Contact Us</h5>
+              <p>Subscribe Our Newsletter To Get Latest Updates</p>
+              <div class="news_letter">
+                <p class="success" id="success" style="display:none; color: blue; text-decoration: underline; font-size: 14px;"></p>
+                <p class="error" id="error" style="display:none; color: red; text-decoration: underline; font-size: 14px;"></p>
+                <form action="#" method="post" id="newsletter_form">
+                  <input type="text" placeholder="Newsletter sign up" name="newletter_email" id="newletter_email">
+                  <input type="submit" id="subcribe" class="button" value="subscribe now" name="subcribe">
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container animated slide">
+      <div class="row">
+        <div class="col-sm-12 col-md-8">
+          <p>Copyrights 2025 <strong>Grow My Tree</strong> • All Rights Reserved.</p>
+        </div>
+        <div class="col-md-4 col-sm-12 text-end">
+          <div class="social_icon">
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="mailto:info@growmytree.com"><i class="fa fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#0" class="cd-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+
+  <!-- ===== JS (ORDER MATTERS) ===== -->
+  <!-- jQuery (CDN) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Owl Carousel (CDN) – right after jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- Your other libs -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/isotope-docs.min.js"></script>
+  <script src="js/jquery.prettyPhoto.js"></script>
+  <script src="js/jquery.parallax.js"></script>
+  <script src="js/jquery.cycle.all.js"></script>
+  <script src="js/jquery.appear.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="../aos%402.3.1/dist/aos.js"></script>
+
+  <script>
+    // AOS init (optional)
+    if (window.AOS && typeof AOS.init === "function") { AOS.init(); }
+
+    // Owl init (safe)
+    (function($){
+      $(function(){
+        var $c = $('#product-images-carousel');
+        if (typeof $.fn.owlCarousel === 'function' && $c.length){
+          $c.owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 3500,
+            autoplayHoverPause: true,
+            lazyLoad: true
+          });
+        } else {
+          console.warn('OwlCarousel not loaded or #product-images-carousel missing');
+        }
+      });
+    })(jQuery);
+  </script>
+</body>
+</html>

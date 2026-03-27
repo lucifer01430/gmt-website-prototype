@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <title>Cart | Growup My Tree</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <!--Fonts-->
+    <link href="../css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet" type="text/css">
+    <link href="../css-1?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet" type="text/css">
+    <link href="../css-2?family=Droid+Serif:400,400italic" rel="stylesheet" type="text/css">
+    <!--Bootstrap-->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <!--font Awesome-->
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <!--slider-->
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <!--PrettyPhoto-->
+    <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css">
+    <!--main file-->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!--Responsive file-->
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    <!-- ANIMATE_SCROLL_CDN -->
+    <link href="../aos%402.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <!-- Preloader -->
+        <div class="preloader"></div>
+        <!--Start Header-->
+        <header>
+            <div class="header_bottom home1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-3 col-xl-3">
+                            <div class="logo">
+                                <a href="index.html"><img src="images/logo.png" alt="img"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-7 col-md-7 col-lg-7 text-end">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#about">About Us</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">How It Works</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#how-it-works">Step by Step</a></li>
+                                            <li><a href="#impact">Impact</a></li>
+                                            <li><a href="#faqs">FAQs</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#catalog">Plant a Tree</a></li>
+                                    <li><a href="#gift">Gift a Tree</a></li>
+                                    <li><a href="contact.html">Contat Us</a></li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                        <div class="col-sm-12 col-md-2 col-xl-2 responsive_center ms-auto">
+                            <div class="cart_info">
+                                <a href="cart.html"><img src="images/cart.png" alt="img"> <span>0</span></a>
+                            </div>
+                            <form action="#">
+                                <input type="text" placeholder="search">
+                                <input type="submit" value="">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--End Header-->
+        <!--Responsive Nav-->
+        <div class="responsive_button">
+            <p>Home</p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""><i class="fa fa-bars"></i></span>
+            </button>
+        </div>
+        <div class="responsive_nav collapse navbar-collapse" id="navbarToggleExternalContent">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#catalog">Plant a Tree</a></li>
+                <li><a href="#gift">Gift a Tree</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#account">My Account</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <!--Responsive Nav-->
+    <!--Start Page Title-->
+    <div class="page_title bg3" data-aos="fade-up" data-aos-duration="1000">
+        <div class="layer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <h1>Cart</h1>
+                        <div class="beadcrumb">
+                            <a href="#">Home</a> <i class="fa fa-angle-right"></i> <span>Cart</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Page Title-->
+
+    <section data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <div class="heading_wrap animated slide">
+                <div class="icon_bar"></div>
+                <h2 class="heading_a">Cart <span>Details</span></h2>
+            </div>
+            <div class="cart_table_wraper">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="cart_wrpaer">
+                            <div class="table_scroll table-responsive">
+                                <table class="table">
+                                    <thead class="dark-bg">
+                                        <tr>
+                                            <th><span>Product</span></th>
+                                            <th><span>Description</span></th>
+                                            <th><span>Price (INR)</span></th>
+                                            <th><span>Quantity</span></th>
+                                            <th><span>Total (INR)</span></th>
+                                            <th><span>Remove</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><img class="img-rounded" src="images/custom/tool1.png" alt="White Sandalwood"></td>
+                                            <td>
+                                                <p>White Sandalwood Tree</p>
+                                            </td>
+                                            <td>
+                                                <p>₹25,000</p>
+                                            </td>
+                                            <td>
+                                                <div class="quantity">
+                                                    <input step="1" min="1" max="10" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" type="number">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>₹25,000</p>
+                                            </td>
+                                            <td><a href="#"><i class="fa fa-times"></i></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- table End -->
+                            </div>
+                            <div class="row cart_btns">
+                                <div class="col-lg-6 col-sm-12 res_mrg coupan_code">
+                                    <form action="#">
+                                        <input type="text" placeholder="Coupon Code" class="common_btn cart_page_btn1" name="coupon">
+                                    </form>
+                                    <a class="theme-btn btn-style-two cart_page_btn2" href="#">Apply coupon</a>
+                                </div>
+                                <!-- column End -->
+                                <div class="col-lg-6 col-sm-12 text-end cont_btn">
+                                    <a class="theme-btn btn-style-two" href="#">Continue Shopping </a>
+                                </div>
+                                <!-- column End -->
+                            </div>
+                            <!-- cart_btns End -->
+                        </div>
+                    </div>
+                    <!-- column End -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="estimate-section" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <div class="estimate-form">
+                <div class="heading_wrap animated slide">
+                    <div class="icon_bar"></div>
+                    <h2 class="heading_a">Order <span>Summary</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="cart_totals_area gray-bg cart-2">
+                            <ul>
+                                <li>
+                                    Subtotal <span>₹25,000</span>
+                                </li>
+                                <li>
+                                    Shipping Charge <span>Free (India only)</span>
+                                </li>
+                                <li>
+                                    <strong>Total</strong><span><strong> ₹25,000 </strong></span>
+                                </li>
+                            </ul>
+                            <a class="theme-btn btn-style-two" href="checkout.html">Proceed To Checkout</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="cart_info_box">
+                            <div class="why-gift-box" style="background:#f6fff6;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(34,139,34,0.07);margin-bottom:16px;">
+                                <h3 style="color:#228B22;font-weight:700;margin-bottom:12px;"><i class="fa fa-tree" style="margin-right:8px;color:#3cb371;"></i> Why Gift a Tree?</h3>
+                                <p style="font-size:1.08rem;color:#444;margin-bottom:16px;">Every tree in your cart helps fight climate change, supports farmer livelihoods, and grows a greener India.<br> <span style="color:#3cb371;font-weight:600;">All prices include plantation, maintenance, and a digital certificate.</span></p>
+                                <ul style="list-style:none;padding-left:0;">
+                                    <li style="margin-bottom:8px;"><i class="fa fa-lock" style="color:#228B22;margin-right:8px;"></i> Secure payment options</li>
+                                    <li style="margin-bottom:8px;"><i class="fa fa-certificate" style="color:#228B22;margin-right:8px;"></i> Instant e-certificate after purchase</li>
+                                    <li style="margin-bottom:8px;"><i class="fa fa-truck" style="color:#228B22;margin-right:8px;"></i> Free shipping across India</li>
+                                    <li><i class="fa fa-users" style="color:#228B22;margin-right:8px;"></i> Contact us for bulk gifting or corporate orders</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Start Footer -->
+    <div class="footer_bottom">
+        <div class="footer_inner">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Logo & About -->
+                    <div class="col-sm-12 col-md-6 col-lg-4 animated slide res_mrg">
+                        <div class="footer_widget">
+                            <a href="#"><img src="images/white_logo.png" alt="Grow My Tree Logo"></a>
+                            <p>
+                                Grow Up My Tree empowers you to plant Sandalwood, Red Sandalwood, and premium Mango
+                                trees.
+                                Together, we fight climate change, conserve biodiversity, and support farmer
+                                livelihoods.
+                            </p>
+                            <hr>
+                            <a href="https://maps.app.goo.gl/ZkS3AA4bs4U7U5es7"><i class="fa fa-map-marker"></i> Khasra No. 67, IIM Rd,
+                                Madiyanva, Lucknow, <br>
+                                Uttar Pradesh - 226021</a>
+                            <p><i class="fa fa-phone"></i> +91 123456 789 | +91 9876 54321</p>
+                            <p><i class="fa fa-envelope"></i> info@growmytree.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-sm-12 col-md-6 col-lg-2 animated slide res_mrg">
+                        <div class="footer_widget">
+                            <h5>Quick Links</h5>
+                            <ul>
+                                <li><a href="#">Home Page</a></li>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#how-it-works">How It Works</a></li>
+                                <li><a href="#catalog">Plant a Tree</a></li>
+                                <li><a href="#gift">Gift a Tree</a></li>
+                                <li><a href="#impact">Our Impact</a></li>
+                                <li><a href="#contact">Get in Touch</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Working Hours -->
+                    <div class="col-sm-12 col-md-6 col-lg-3 animated slide">
+                        <div class="footer_widget">
+                            <h5>Working Hours</h5>
+                            <address>
+                                <p><span>We are available 6 days a week.</span></p>
+                                <p>Monday – Friday : 9 am – 6 pm</p>
+                                <p>Saturday : 10 am – 4 pm</p>
+                                <p>Sunday : Closed</p>
+                            </address>
+                            <address>
+                                <p>Closed on public & bank holidays.</p>
+                            </address>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="col-sm-12 col-md-6 col-lg-3 animated slide">
+                        <div class="footer_widget">
+                            <h5>Contact Us</h5>
+                            <p>Subscribe Our Newsletter To Get Latest Updates
+                            </p>
+                            <div class="news_letter">
+                                <p class="success" id="success"
+                                    style="display:none; color: blue; text-decoration: underline; font-size: 14px;"></p>
+                                <p class="error" id="error"
+                                    style="display:none; color: red; text-decoration: underline; font-size: 14px;"></p>
+                                <form action="#" method="post" id="newsletter_form">
+                                    <input type="text" placeholder="Newsletter sign up" name="newletter_email"
+                                        id="newletter_email">
+                                    <input type="submit" id="subcribe" class="button" value="subscribe now"
+                                        name="subcribe">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container animated slide">
+            <div class="row">
+                <div class="col-sm-12 col-md-8">
+                    <p>Copyrights 2025 <strong>Grow My Tree</strong> • All Rights Reserved.</p>
+                </div>
+                <div class="col-md-4 col-sm-12 text-end">
+                    <div class="social_icon">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="mailto:info@growmytree.com"><i class="fa fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#0" class="cd-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Jquery Ui -->
+    <script src="js/jquery-ui.js"></script>
+    <!-- Slider -->
+    <script src="js/owl.carousel.js"></script>
+    <!-- Isotope -->
+    <script src="js/isotope-docs.min.js"></script>
+    <!-- PrettyPhoto -->
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <!-- Parallax -->
+    <script src="js/jquery.parallax.js"></script>
+    <!-- Slider -->
+    <script src="js/jquery.cycle.all.js"></script>
+    <!-- Appear -->
+    <script src="js/jquery.appear.js"></script>
+    <!-- Custom -->
+    <script src="js/custom.js"></script>
+    <script src="../aos%402.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS (Animate On Scroll)
+        AOS.init();
+    </script>
+</body>
+
+</html>
